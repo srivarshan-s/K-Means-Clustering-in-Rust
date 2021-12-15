@@ -52,7 +52,6 @@ fn init_cluster_points(
     num_points: &i32,
     feat: &Vec<Vec<f32>>,
 ) -> Vec<Vec<f32>> {
-    // TODO: Randomly generate cluster points from given features
     let mut rng = rand::thread_rng();
     let mut rand_nums = Vec::<i32>::new();
     for i in 0..*num_clusters {
