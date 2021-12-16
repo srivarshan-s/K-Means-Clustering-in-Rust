@@ -24,14 +24,20 @@ fn init() -> (i32, i32, i32, Vec<Vec<f32>>) {
 
 // Hardcode the initial data
 fn hardcode_init() -> (i32, i32, i32, Vec<Vec<f32>>) {
-    let num_points = 4;
+    let num_points = 10;
     let num_feat = 2;
     let num_clusters = 2;
     let feat = vec![
-        vec![1.0, 1.0],
-        vec![2.0, 1.0],
-        vec![4.0, 3.0],
-        vec![5.0, 4.0],
+        vec![1.7, 1.8],
+        vec![2.6, 1.3],
+        vec![4.4, 3.7],
+        vec![5.8, 4.1],
+        vec![3.6, 2.8],
+        vec![2.2, 5.7],
+        vec![1.5, 3.3],
+        vec![5.1, 1.9],
+        vec![4.9, 2.7],
+        vec![1.3, 4.5],
     ];
     (num_clusters, num_feat, num_points, feat)
 }
