@@ -1,12 +1,11 @@
 use rand::Rng;
 // use std::io::*;
 
-// Main function
 fn main() {
     // let (num_clusters, num_feat, num_points, feat) = init();
     let (num_clusters, num_points, feat) = hardcode_init();
     let mut cluster_points = init_cluster_points(&num_clusters, &num_points, &feat);
-    let iter_num = 100;
+    let iter_num = 1000;
     cluster_points = k_means(cluster_points, &feat, iter_num);
     dbg!(&cluster_points);
 }
